@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: rgb(29, 29, 29);
+}
+
+h1, h2 {
+    color: aqua;
+}
+
+h3, p, a {
+    color: white;
+}
+
+a:hover {
+    color: aqua;
+}
+
+#headerBox {
+    display: grid;
+    grid-template-areas: "Text" "Image";
+    grid-template-columns: 2fr 1fr;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    padding: 3rem 0;
+    background-color: black;
+}
+
+#headerText {
+    margin: auto;
+}
+
+#selfImage {
+    width: 80%;
+    margin: 0 auto 0 0;
+    display: block;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    padding: 3rem 0;
+    background-color: black;
+}
+
+.sectionTitle {
+    margin: 0;
+}
+
+section {
+    margin: 0 5rem;
+    border-top: 1px solid aqua;
+    padding: 2rem 0;
+}
+
+#educationSection {
+    display: grid;
+    grid-template-areas: "Highschool" "Collge" "Other";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.educationTitle {
+    text-align: center;
+}
+
+.educationList {
+    color: white;
+}
+
+.highlightText {
+    color: aqua;
+}
