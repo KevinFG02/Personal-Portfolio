@@ -22,16 +22,26 @@
 
     <main>
         <section>
-            <h2 class="sectionTitle">About Me & Contact Info</h2>
+            <h2 class="sectionTitle">About Me</h2>
+
+            <div>
+                <h3>Contact</h3>
+                <div class="socialLinks">
+                    <div>
+                        <p class="social">School: flores.Kevin@student.greenriver.edu</p>
+                        <p class="social">Work: kevinfloresgonzalez862@gmail.com</p>
+                    </div>
+                    
+                    <p class="social">Phone: 725-726-0190</p>
+                </div>
+            </div>
 
             <div>
                 <h3>Links</h3>
-                <div id="socialLinks">
+                <div class="socialLinks">
                     <p class="social"><a href="https://www.linkedin.com/in/kevin-flores-gonzalez-7a9303340" target="_blank">Linkedin</a></p>
                     <p class="social"><a href="https://github.com/KevinFG02" target="_blank">Github - KevinFG02</a></p>
-                    <p class="social">
-                        Flores.Kevin@student.greenriver.edu
-                    </p>
+                    <p class="social">Flores.Kevin@student.greenriver.edu</p>
                 </div>
             </div>
         </section>
@@ -85,6 +95,7 @@
                     <h3 class="skillTitle">Soft Skills</h3>
 
                     <ul class="skillList">
+                        <li>Sprint Planning</li>
                         <li>Collaborative</li>
                         <li>Open To Criticism</li>
                         <li>Patient & Respectful</li>
@@ -117,6 +128,80 @@
         
         <section>
             <h2 class="sectionTitle">Projects & Archive</h2>
+
+            <div class="projectsContainter">
+                <div>
+                    <h3>Java</h3>
+
+                    <p class="projectLink"><a href="https://github.com/KevinFG02/Java-CS122" target="_blank">Java College Collection #1</a></p>
+                    <p class="projectLink"><a href="https://github.com/KevinFG02/Java-CS123" target="_blank">Java College Collection #2</a></p>
+                    <p class="projectLink"><a href="https://docs.google.com/document/d/1hQ2GATf2uircrCGWve8dRKNU3vTwnnB6XT-C2bCXom8/edit?usp=sharing" target="_blank">Java College Notes</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <form id="order-form" action="#" method="get">
+                <h2>Contact Form</h2>
+                <fieldset id="input-info">
+                    <div>
+                        <label for="fname">First Name</label> <br>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label> <br>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                    <div>
+                        <label for="job">Job Title</label> <br>
+                        <input type="text" id="job" name="job">
+                    </div>
+                    <div>
+                        <label for="company">Company</label><br>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div>
+                        <label for="linkedin">Linkedin URL</label> <br>
+                        <input type="text" id="linkedin" name="linkedin">
+                    </div>
+                    <div>
+                        <label for="email">Email Address</label> <br>
+                        <input type="email" id="email" name="email">
+                    </div>
+                </fieldset>
+
+                <fieldset id="meeting">
+                    <div>
+                        <label for="meeting-option">How Do We Meet?</label> <br>
+                        <select id="meeting-option" name="meeting-option">
+                            <option value="none">Please Select</option>
+                            <option value="online">Online</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="meetother">Other (Please Specify)</label>
+                        <input type="text" id="meetother" name="meetother">
+                    </div>
+                </fieldset>
+
+                <label for="message">Message</label> <br>
+                <textarea rows="5" id="message" name="message"></textarea>
+
+                <input type="checkbox" id="mailList" name="mailList" value="mail">
+                <label for="mailList">Add Me To Your Mailing List</label> <br>
+
+                <span id="emailFormat">Choose an email format: </span>
+                <label for="htmlOption">
+                    <input type="radio" id="htmlOption" name="method" value="htmlOption">
+                    HTML
+                </label>
+                <label for="textOption">
+                    <input type="radio" id="textOption" name="method" value="textOption">
+                    Text
+                </label> <br>
+
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
         </section>
     </main>
 
