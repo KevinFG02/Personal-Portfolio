@@ -14,7 +14,7 @@ const PORT = 3002;
 // req: contains information about the incoming request
 // res: allows us to send back a response to the client
 app.get('/', (req, res) => {
-    res.sendFile(`${import.meta.dirname}/views/home.html`)
+    res.sendFile(`${import.meta.dirname}/views/index.html`)
 });
 
 // Start the server and listen on the specified port 
