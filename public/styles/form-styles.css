@@ -1,0 +1,61 @@
+:root {
+    --primary: rgb(0, 255, 255);
+    --background: rgb(29, 29, 29);
+    --dark: rgb(0, 0, 0);
+    --light: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: var(--dark);
+}
+
+h1 {
+    color: var(--primary);
+    text-align: center;
+}
+
+#input-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    border: none;
+}
+
+#meeting {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    border: none;
+}
+
+label {
+    color: var(--light);
+}
+
+#fname, #lname, #job, #company, #linkedin, #email, #meetother, select, textarea {
+    background-color: var(--dark);
+    color: var(--light);
+    width: 100%;
+}
+
+#emailFormat {
+    color: var(--light);
+}
+
+#submit-button {
+    padding: .5rem;
+    background-color: var(--primary);
+}
+
+#submit-button:hover {
+    background-color: var(--light);   
+}

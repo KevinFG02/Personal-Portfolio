@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <link rel="stylesheet" href="styles/form-styles.css">
+    <link rel="icon" href="images/kfg-favicon.png">
+</head>
+<body>
+    <main>
+        <form id="order-form" action="#" method="get">
+            <h1>Contact Form</h1>
+            <fieldset id="input-info">
+            <div>
+                <label for="fname">First Name</label> <br>
+                <input type="text" id="fname" name="fname">
+            </div>
+            <div>
+                <label for="lname">Last Name</label> <br>
+                <input type="text" id="lname" name="lname">
+            </div>
+            <div>
+                <label for="job">Job Title</label> <br>
+                <input type="text" id="job" name="job">
+            </div>
+            <div>
+                <label for="company">Company</label><br>
+                <input type="text" id="company" name="company">
+            </div>
+            <div>
+                <label for="linkedin">Linkedin URL</label> <br>
+                <input type="text" id="linkedin" name="linkedin">
+            </div>
+            <div>
+                <label for="email">Email Address</label> <br>
+                <input type="email" id="email" name="email">
+            </div>
+            </fieldset>
+
+            <fieldset id="meeting">
+                <div>
+                    <label for="meeting-option">How Do We Meet?</label> <br>
+                    <select id="meeting-option" name="meeting-option">
+                        <option value="none">Please Select</option>
+                        <option value="online">Online</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="meetother">Other (Please Specify)</label>
+                    <input type="text" id="meetother" name="meetother">
+                </div>
+            </fieldset>
+
+            <label for="message">Message</label> <br>
+            <textarea rows="5" id="message" name="message"></textarea>
+
+            <input type="checkbox" id="mailList" name="mailList" value="mail">
+            <label for="mailList">Add Me To Your Mailing List</label> <br>
+
+            <span id="emailFormat">Choose an email format: </span>
+            <label for="htmlOption">
+                <input type="radio" id="htmlOption" name="method" value="htmlOption">
+                HTML
+            </label>
+            <label for="textOption">
+                <input type="radio" id="textOption" name="method" value="textOption">
+                Text
+            </label> <br>
+
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
