@@ -11,7 +11,7 @@ body {
 }
 
 form {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     padding: 2rem 1rem;
     background-color: var(--dark);
@@ -20,6 +20,10 @@ form {
 h1 {
     color: var(--primary);
     text-align: center;
+}
+
+input, #message, #meeting-option {
+    border: 2px solid white;
 }
 
 #input-info {
@@ -37,11 +41,20 @@ h1 {
     border: none;
 }
 
+#otherbox {
+    display: none;
+}
+
+#emailformatfieldset {
+    border: none;
+    display: none;
+}
+
 label {
     color: var(--light);
 }
 
-#fname, #lname, #job, #company, #linkedin, #email, #meetother, select, textarea {
+#fname, #lname, #job, #company, #linkedin, #user-email, #meetother, select, textarea {
     background-color: var(--dark);
     color: var(--light);
     width: 100%;
@@ -58,4 +71,10 @@ label {
 
 #submit-button:hover {
     background-color: var(--light);   
+}
+
+.error {
+    color: red;
+    display: none;
+    font-size: .9rem;
 }
