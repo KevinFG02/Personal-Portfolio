@@ -54,7 +54,7 @@ label {
     color: var(--light);
 }
 
-#fname, #lname, #job, #company, #linkedin, #user-email, #meetother, select, textarea {
+#fname, #lname, #job, #company, #linkedin, #useremail, #meetother, select, textarea {
     background-color: var(--dark);
     color: var(--light);
     width: 100%;

@@ -1,5 +1,5 @@
 let emailcheckbox = document.getElementById("mailList");
-let meeting = document.getElementById("meeting-option");
+let meeting = document.getElementById("meetingoption");
 let otherbox = document.getElementById("otherbox");
 
 document.getElementById("contact-form").onsubmit = () => {
@@ -35,7 +35,7 @@ document.getElementById("contact-form").onsubmit = () => {
     }
 
     // Validate optional email
-    let email = document.getElementById("user-email").value.trim();
+    let email = document.getElementById("useremail").value.trim();
 
     if(email != ""){
         if(!email.includes('@') || !email.includes('.')){

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/3.1.4/js/dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/3.1.4/css/dataTables.dataTables.min.css">
+</head>
+<body>
+    <h1>Meeting Data</h1>
+    <table id="meeting-data-table">
+    <thead>
+        <tr>
+            <th>Name:</th>
+            <th>Job:</th>
+            <th>Company:</th>
+            <th>Linkedin:</th>
+            <th>Email:</th>
+            <th>Meeting Option:</th>
+            <th>Meeting Other Option:</th>
+            <th>Message:</th>
+            <th>Mail List Option:</th>
+            <th>Email Format:</th>
+            <th>Timestamp:</th>
+        </tr>
+    </thead>
+    <tbody>
+    <% meetingData.forEach(meetingInfo => { %>
+        <tr>
+            <td><%= meetingInfo.fname %> <%= meetingInfo.lname %></td>
+            <td><%= meetingInfo.job %></td>
+            <td><%= meetingInfo.company %></td>
+            <td><%= meetingInfo.linkedin %></td>
+            <td><%= meetingInfo.useremail %></td>
+            <td><%= meetingInfo.meetingoption %></td>
+            <td><%= meetingInfo.meetother %></td>
+            <td><%= meetingInfo.message %></td>
+            <td><%= meetingInfo.mailList %></td>
+            <td><%= meetingInfo.methodformat %></td>
+            <td><%= meetingInfo.timestamp.toLocaleString() %></td>
+        </tr>
+    <%}); %>
+    </tbody>
+    </table>
+
+    <script>
+        new DataTable('#meeting-data-table');
+    </script>
+</body>
+</html>
